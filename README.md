@@ -1,3 +1,5 @@
+Anotações das aulas realizadas
+
 Aula 1 - Construção de uma classe
 
 Projeto criado no Google Colab pelo professor. 
@@ -31,4 +33,61 @@ c1 = Circulo(5)
 print('Área: ', c1.calcular_area())
 
 **********************************************************************************
-Aula 2 -
+Aula 2 - COnstrução de um Modelo Orientado a Objetos usando animais (Nenhum animal foi ferido ou morto durante a aula) - Herança e polimorfismo
+
+Reaproveitameto de codigo ex 1:
+
+class Animal: <- classe animal
+	def __init__(self, nome, cor): <- parametro / para o metodo init precisa de um self
+		self.nome = nome <- atibuto da classe animal
+		self.cor = cor
+
+class Cachorro(Animal): <- herança
+	def latir(self): <- metodo latir
+		return "Au Au!"
+
+c = Cachorro("Rex", "Preto")
+
+print(c.latir())
+print(c.nome, c.cor)
+
+
+Reaproveitameto de codigo ex 2: Retangulo e Forma
+
+class Forma: <- super classe
+	def calcular_area(self):
+		pass <- indica que o metodo está vazio
+
+class Retangulo(Forma): <- sub classe, herda a forma, o conceito da forma
+	def __init__(self, baseP, alturaP):
+		self.base = baseP <- atributo da classe, o "P" é o parametro
+		self.altura = alturaP <- variavel = parametro
+
+def calcular_area(self):
+	return self.base * self.altura
+
+
+class Circulo(Forma):
+	def __init__(self, raioP):
+		self.raio = raioP
+
+	def calcular_area(self):
+		return 3.14 * (self.raio ** 2)
+
+ret = Retangulo(5, 3)
+print("retangulo: ", ret.calcular_area())
+
+cir = Circulo(4)
+print("circulo: ", cir.calcular_area())
+
+Cria-se uma instancia
+
+************************************************************************************
+
+Aula 3
+
+	Encapsulamento e atributos privados
+
+
+
+
