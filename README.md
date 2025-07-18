@@ -88,6 +88,40 @@ Aula 3
 
 	Encapsulamento e atributos privados
 
+Aprende-se em Ciencia de dados
+
+class ContaBancaria:
+	def __init__(self, saldo):
+	#pass -> indica que o metodo está vazio
+		self.__saldo = saldo <- atributo privado, o saldo é um atributo da classe e um parametro
+
+	def depositar(self, valor):
+		self.__saldo = self.__saldo + valor
+
+	def consultar_saldo(self):
+		return self.__saldo
+
+conta = ContaBancaria(1000)
+conta.depositar(500)
+print("saldo: ", conta.consultar_saldo())
+print(conta.valor)
+
+conta.depositar(100)
+print(conta.consultar _saldo())
+
+
+Exemplo 02
+
+class Carro:
+	def __init__(self, marca, modelo, ano):
+		self.__marca = marca
+		self.__modelo = modelo
+		self.__ano = ano
+
+
+
+
+
 
 
 
