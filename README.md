@@ -20,11 +20,15 @@ print(p4.nome, pq.idade)
 *************************************************************************************************
 
 class Circulo: <- class indica ao python que está se criando uma classe
+	
 	def __init__(self, raio_parametro):
-	    Self.raio = raio_parametro
+	    self.raio = raio_parametro
 
-def calcular_area(self):
-    Return 3.14 * (self.raio ** 2)
+	def calcular_area(self):
+    	return 3.14 * (self.raio ** 2)
 
-C1 = Circulo(5)
-print(“área: “c1.calcular_area())
+c1 = Circulo(5)
+print('Área: ', c1.calcular_area())
+
+**********************************************************************************
+Aula 2 -
