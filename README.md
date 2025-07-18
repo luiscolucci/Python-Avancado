@@ -7,10 +7,10 @@ class Pessoa: <- Classe
 def __init__(self, nome, idade): <- Método
 	    self.nome = nome <- variável, atributo nome da classe pessoa
 	    self.idade = idade
-P1 = Pessoa(“João”, 20)
-P2 = Pessoa(“Maria”, 22)	<- instancias
-P3 = Pessoa(“Carlos”, 25)
-P4 = Pessoa(“Jorge”, 27)
+p1 = Pessoa('João', 20)
+p2 = Pessoa('Maria', 22)	<- instancias
+p3 = Pessoa('Carlos', 25)
+p4 = Pessoa('Jorge', 27)
 
 print(p1.nome, pq.idade)
 print(p2.nome, pq.idade)
